@@ -1,0 +1,6 @@
+psycopg2     # PostgreSQL connector
+numpy        # Data analysis
+scipy        # Advanced analysis & computation
+PyQt5        # GUI library
+pandas       # Data handling & manipulation
+matplotlib   # Data visualization

@@ -1,0 +1,22 @@
+# Ignore Python bytecode and caches
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore virtual environments
+VehicleEnv/
+env/
+
+# Ignore configuration files with sensitive information
+config.ini
+
+# Ignore environment-specific files
+*.env
+.DS_Store  # macOS-specific file
+Thumbs.db  # Windows-specific file
+
+# Ignore Jupyter Notebook checkpoints (if any)
+.ipynb_checkpoints/
+
+# Ignore test output
+tests/__pycache__/
