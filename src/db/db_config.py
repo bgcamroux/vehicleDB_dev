@@ -8,12 +8,12 @@ from psycopg2 import OperationalError
 
 def read_dbConfig():
     """
-    Read the database config from config.ini, located in the parent to /src/
-    and return as a dictionary.
+    Read the database config from config.ini, located in the parent to /src/,
+    and return the configuration as a dictionary.
     """
 
-    config_path = os.path.join(os.path.dirname(os.path.dirname(
-        os.path.abspath(__file__))), 'config.ini')
+    config_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
+        os.path.abspath(__file__)))), 'config.ini')
 
     if not os.path.exists(config_path):
         print("Error: Configuration file not found in parent to /src/ \
