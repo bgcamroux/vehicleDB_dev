@@ -20,3 +20,12 @@ Thumbs.db  # Windows-specific file
 
 # Ignore test output
 tests/__pycache__/
+
+# Ignore Emacs backups
+*~
+
+# Ignore Emacs auto-save files
+.#*
+
+# Ignore emacs lock files
+*.lock
