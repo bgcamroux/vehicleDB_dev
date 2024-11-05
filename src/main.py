@@ -6,12 +6,11 @@
 import os
 import sys
 
-# import psycopg2
-# import pandas as pd
-# from configparser import ConfigParser
+from PyQt5.QtWidgets import QApplication
  
 from db.db_config import read_dbConfig as readConfig
 from db.db_config import dbConnection
+from gui.gui_main import MainWindow
 
 def main():
     print("Attempt DB connection:")
@@ -19,7 +18,12 @@ def main():
 
     if dbConn:
         dbConn.close()
-        print("Database connection closed.")
+        print("+ Database connection closed.")
+
+    app = QApplication(sys.argv)
+    window = MainWindow()
+    window.show()
+    sys.exit(app.exec_())
     
 if __name__ == "__main__":
     main()

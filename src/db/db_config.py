@@ -40,10 +40,10 @@ def read_dbConfig():
 def dbConnection(db_config):
     try:
         connection = psycopg2.connect(**db_config)
-        print("Database connection successfully established.")
+        print("+ Database connection successfully established.")
         return connection
 
     except OperationalError as e:
-        print(f"Error: Could not connect to the database. Details: {e}")
+        print(f"- Error: Could not connect to the database. Details: {e}")
         return None
     
