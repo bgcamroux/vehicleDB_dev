@@ -8,9 +8,9 @@ import sys
 
 from PyQt5.QtWidgets import QApplication
  
-from db.db_config import read_dbConfig as readConfig
-from db.db_config import dbConnection
-from gui.gui_main import MainWindow
+from db.connection import read_dbConfig as readConfig
+from db.connection import dbConnection
+from gui.main_window import MainWindow
 
 def main():
     print("Attempt DB connection:")
